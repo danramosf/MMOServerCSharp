@@ -1,0 +1,7 @@
+G:\Projects\Unity\MMOServer\MMOServer\MMOClient\bin\Debug\MMOClient.exe.config
+G:\Projects\Unity\MMOServer\MMOServer\MMOClient\bin\Debug\MMOClient.exe
+G:\Projects\Unity\MMOServer\MMOServer\MMOClient\bin\Debug\MMOClient.pdb
+G:\Projects\Unity\MMOServer\MMOServer\MMOClient\obj\Debug\MMOClient.csprojAssemblyReference.cache
+G:\Projects\Unity\MMOServer\MMOServer\MMOClient\obj\Debug\MMOClient.csproj.CoreCompileInputs.cache
+G:\Projects\Unity\MMOServer\MMOServer\MMOClient\obj\Debug\MMOClient.exe
+G:\Projects\Unity\MMOServer\MMOServer\MMOClient\obj\Debug\MMOClient.pdb
