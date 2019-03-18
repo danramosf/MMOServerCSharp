@@ -75,6 +75,7 @@ namespace MMOServer
             buffer.WriteInteger((int)ServerPackets.SConnectionOK);
             buffer.WriteString("You have been successfully connected to the server.");
             SendDataTo(index, buffer.ToArray());
+            //Clear the buffer
             buffer.Dispose();
         }
     }

@@ -5,3 +5,7 @@ G:\Projects\Unity\MMOServer\MMOServer\obj\Debug\MMOServer.csprojAssemblyReferenc
 G:\Projects\Unity\MMOServer\MMOServer\obj\Debug\MMOServer.csproj.CoreCompileInputs.cache
 G:\Projects\Unity\MMOServer\MMOServer\obj\Debug\MMOServer.exe
 G:\Projects\Unity\MMOServer\MMOServer\obj\Debug\MMOServer.pdb
+G:\Projects\Unity\MMOServer\MMOServer\bin\Debug\Newtonsoft.Json.dll
+G:\Projects\Unity\MMOServer\MMOServer\bin\Debug\Newtonsoft.Json.pdb
+G:\Projects\Unity\MMOServer\MMOServer\bin\Debug\Newtonsoft.Json.xml
+G:\Projects\Unity\MMOServer\MMOServer\obj\Debug\MMOServer.csproj.CopyComplete

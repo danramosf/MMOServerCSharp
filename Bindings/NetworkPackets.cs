@@ -9,6 +9,7 @@ namespace Bindings
     public enum ServerPackets
     {
         SConnectionOK = 1,
+        SLoginResponse = 2,
     }
 
     //get send from client to server
@@ -16,5 +17,7 @@ namespace Bindings
     public enum ClientPackets
     {
         CThankYou = 1,
+        CLoginRequest = 2,
+        CAccountCreate = 3,
     }
 }

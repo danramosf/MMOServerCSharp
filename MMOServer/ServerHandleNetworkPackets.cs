@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using Bindings;
+using MMOServer.Controllers;
+using Newtonsoft.Json.Linq;
 
 namespace MMOServer
 {
@@ -16,7 +18,8 @@ namespace MMOServer
 
             Packets = new Dictionary<int, Packet_>
             {
-                {(int)ClientPackets.CThankYou, HandleThankYou }
+                {(int)ClientPackets.CThankYou, HandleThankYou },
+                {(int)ClientPackets.CAccountCreate, HandleAccountCreate }
             };
         }
 
@@ -41,6 +44,32 @@ namespace MMOServer
 
             //Add your code you want to execute here...
             Console.WriteLine(msg);
+        }
+
+        private static void HandleAccountCreate(int index, byte[] data)
+        {
+            PacketBuffer buffer = new PacketBuffer();
+            buffer.WriteBytes(data);
+            buffer.ReadInteger();
+            string msg = buffer.ReadString();
+            buffer.Dispose();
+
+            //Add your code you want to execute here...
+            Console.WriteLine(msg);
+            AccountController accController = new AccountController();
+
+            try
+            {
+                var jsonMsg = JObject.Parse(msg);
+                string email = (string)jsonMsg["email"];
+                string password = (string)jsonMsg["password"];
+
+                accController.CreateAccount(email, password);
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine("The message received from the client is in the wrong format. The account was not created.");
+            }            
         }
     }
 }
